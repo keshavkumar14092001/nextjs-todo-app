@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import { AiOutlinePlus } from 'react-icons/ai';
 import Todo from '../components/Todo';
-import { db } from './firebase';
+import { db } from '../components/firebase.js';
 import { query, collection, onSnapshot, updateDoc, addDoc, doc, deleteDoc } from 'firebase/firestore';
 
 export default function Home() {
